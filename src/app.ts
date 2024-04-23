@@ -9,6 +9,9 @@ app.use(express.json());
 
 // Usar las rutas de email
 app.use('/emails', emailRouter);
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+});
 
 const PORT = 3000;
 app.listen(PORT, () => {
