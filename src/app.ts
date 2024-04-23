@@ -10,7 +10,7 @@ app.use(express.json());
 // Usar las rutas de email
 app.use('/emails', emailRouter);
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
